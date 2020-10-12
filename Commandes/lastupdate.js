@@ -6,8 +6,8 @@ module.exports.run = async(bot, message, args) => {
 
     const embed = new Discord.MessageEmbed()
     .setColor('#8BA3E4')
-    .setTitle("`📑` Page d'aide")
-    .setDescription(":warning: Commandes à utilisées avec le préfix: **`j!`**\n\n`joke`: Blague aléatoire\n`info`: Informations sur Joke'Bot\n`lastupdate`: Savoir les dernières MAJ.")
+    .setTitle("`🔗` Dernières mises-à-jours")
+    .setDescription("Dernière MAJ. 12/10/20 - 18h45:\n- Ajout de la commande `lastupdate`\n- Ajout de l'invitation dans le `info`")
     .setFooter('Joke\'Bot - By ' + ownerBot, bot.user.avatarURL());
 
     message.channel.send(embed);
@@ -15,5 +15,5 @@ module.exports.run = async(bot, message, args) => {
 };
 
 module.exports.help = {
-    name: "help"
+    name: "lastupdate"
 };
